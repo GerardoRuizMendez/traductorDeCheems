@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>cheems</title>
-    <script src="cheems.js"></script>
 </head>
-<body onload="inicio">
+
+<body>
     <form>
-        <textarea id="area" cols="50" rows="20"></textarea>
+        <textarea id="area" cols="50" rows="20" class="area"></textarea>
         <br>
         <input type="button" value="cheemsimiza" onclick="accion()">
         <br>
-        <p id="etiqueta" style="border: 1px; width: 600px;"></p>
+        <p id="etiqueta" class="etiqueta"></p>
     </form>
+
+    <script src="cheems.js"></script>
 </body>
+
 </html>
