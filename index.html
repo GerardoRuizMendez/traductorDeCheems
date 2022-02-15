@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Cheemsificador</title>
 </head>
 
 <body>
     <main class="main">
-        <h1>Transformar texto en idioma Cheems / Cheemsificar</h1>
+        <h1 class="centrar">Transformar texto en idioma Cheems / Cheemsificar</h1>
         <form class="formulario">
-            <label for="area">Ingrese el texto a Cheemsificar:</label>
+            <label for="area" class="centrar etiqueta">Ingrese el texto a Cheemsificar:</label>
             <textarea id="area" cols="50" rows="20" class="area"></textarea>
             <br>
-            <input type="button" value="cheemsimiza" onclick="accion()">
+            <input type="button" class="boton" value="cheemsifiza" onclick="accion()">
             <br>
             <p id="etiqueta" class="etiqueta"></p>
         </form>
