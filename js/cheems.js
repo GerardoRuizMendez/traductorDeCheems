@@ -6,6 +6,9 @@ function accion() {
 
     var texto = "";
     for (var i = 0; i < palabras.length; i++) {
+        if (palabras[i].length % 2 == 0) {
+            mitad = palabras[i].length / 2;
+        }
         mitad = palabras[i].length / 2;
         mitad = Math.trunc(mitad);
         for (var j = 0; j < palabras[i].length; j++) {
