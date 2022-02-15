@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>cheems</title>
+    <title>Cheemsificador</title>
 </head>
 
 <body>
-    <form>
-        <textarea id="area" cols="50" rows="20" class="area"></textarea>
-        <br>
-        <input type="button" value="cheemsimiza" onclick="accion()">
-        <br>
-        <p id="etiqueta" class="etiqueta"></p>
-    </form>
+    <main class="main">
+        <h1>Transformar texto en idioma Cheems / Cheemsificar</h1>
+        <form class="formulario">
+            <label for="area">Ingrese el texto a Cheemsificar:</label>
+            <textarea id="area" cols="50" rows="20" class="area"></textarea>
+            <br>
+            <input type="button" value="cheemsimiza" onclick="accion()">
+            <br>
+            <p id="etiqueta" class="etiqueta"></p>
+        </form>
+    </main>
 
     <script src="cheems.js"></script>
 </body>
