@@ -37,5 +37,16 @@ function accion() {
         }
         texto += ' ';
     }
-    document.getElementById('etiqueta').innerHTML = texto; //El resultado se escribe en la etiqueta para el usuario
+    document.getElementById('resultado').value = texto; //El resultado se escribe en la etiqueta para el usuario
+}
+
+function copiar() {
+
+}
+
+function otra() {
+    document.getElementById('resultado').select();
+    document.execCommand('copy');
+
+    alert("Texto copiado");
 }
