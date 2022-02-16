@@ -1,6 +1,7 @@
 function accion() {
     //Tomamos el texto escrito en el textArea y lo pasamos a la funcion que lo traduce
-    cheems(document.getElementById('area').value);
+    var resultado = cheems(document.getElementById('area').value);
+    document.getElementById('resultado').value = resultado;
 }
 
 function cheems(palabras) {
@@ -41,7 +42,7 @@ function cheems(palabras) {
         }
         texto += ' ';
     }
-    document.getElementById('resultado').value = texto; //El resultado se escribe en la etiqueta para el usuario
+    return texto; //El resultado se escribe en la etiqueta para el usuario
 }
 
 function otra() {
