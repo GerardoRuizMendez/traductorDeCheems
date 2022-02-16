@@ -1,5 +1,9 @@
 function accion() {
-    var palabras = document.getElementById('area').value; //Tomamos el texto escrito en el textArea
+    //Tomamos el texto escrito en el textArea y lo pasamos a la funcion que lo traduce
+    cheems(document.getElementById('area').value);
+}
+
+function cheems(palabras) {
     palabras = palabras.replace(".", "");
     palabras = palabras.replace(",", "");
     palabras = palabras.replace("\n", " "); //Quitamos puntos, comas y saltos de línea
@@ -38,10 +42,6 @@ function accion() {
         texto += ' ';
     }
     document.getElementById('resultado').value = texto; //El resultado se escribe en la etiqueta para el usuario
-}
-
-function copiar() {
-
 }
 
 function otra() {
